@@ -1,0 +1,26 @@
+*{
+     margin: 0px;
+     padding: 0px;
+}
+
+body, html{
+     height: 100%; /* Faz com que o corpo e o html ocupem toda a altura da janela */
+     display: flex; /* Usa Flexbox para o layout */
+     justify-content: center; /* Centraliza horizontalmente */
+     align-items: center; /* Centraliza verticalmente */
+}
+
+table{     
+     width: 650px; /* Define a largura da tabela */
+     border-collapse: collapse; /* Remove o espaçamento entre as células */
+}
+
+th, td{
+     border: 1px solid black; /* Borda da tabela */
+     padding: 10px; /* Espaçamento interno */
+     text-align: left; /* Alinhamento do texto */
+}
+
+th{
+     text-align: center; /* Alinhamento do texto */
+}
