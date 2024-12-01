@@ -33,7 +33,7 @@ span {
      color: #ffffff; 
 }
 
-.btnEntrar, .btnLimpar {
+.btnEntrar, .btnLimpar, .btnCadastrar {
      padding: 10px;
      border-radius: 8px; 
      width: 40%;
@@ -41,11 +41,11 @@ span {
      border: 2px solid rgb(255, 255, 255);
 }
 
-.btnEntrar:hover,  .btnLimpar:hover{
+.btnEntrar:hover,  .btnLimpar:hover, .btnCadastrar:hover{
      border: 2px solid black;
 }
 
-.btnEntrar:active, .btnLimpar:active{
+.btnEntrar:active, .btnLimpar:active, .btnCadastrar:active{
      background-color: rgb(237, 220, 253);
 }
 

@@ -45,7 +45,7 @@ function checarUsuario (vetUsuarios, usuario) {
          }
      }
      return false;
-}
+};
 
 function checarVazio(email, senha) {
      if(email.trim() == "") {
@@ -58,7 +58,7 @@ function checarVazio(email, senha) {
           return true;
      }
      return false
-}
+};
 
 function checharTamanhoSenha (senha) {
      if(senha.length < 5){
@@ -66,4 +66,4 @@ function checharTamanhoSenha (senha) {
           return true;
      }
      return false;
-}
+};
