@@ -1,0 +1,18 @@
+*{
+     margin: 0px;
+     padding: 0px;
+}
+
+.boxBoy{
+     width: 180px;
+     text-align: center;
+     margin: auto;
+     
+}
+
+.container{
+     display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 100vh; 
+}
