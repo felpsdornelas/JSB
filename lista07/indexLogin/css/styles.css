@@ -10,15 +10,17 @@ body {
      align-items: center;
      height: 100vh;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: radial-gradient(circle, rgb(0, 0, 0), rgb(20, 0, 110));
      
 }
    
 .formulario {
-     background-color: rgb(126, 97, 255);
+     background: radial-gradient(circle, rgb(126, 97, 255), rgb(97, 179, 255));
+     /* background-color: rgb(126, 97, 255); */
      text-align: center;
      width: 400px;
      padding: 50px;
-     border: 3px solid rgb(0, 0, 0);
+     border: 3px solid rgb(255, 255, 255);
      border-radius: 8px;    
 }
 
@@ -51,7 +53,8 @@ span {
 
 a{
      text-decoration: none;
-     color: #000000;
+     color: #ffffff;
+     font-weight: bolder;
 }
 
 label{

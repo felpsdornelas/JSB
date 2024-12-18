@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Informe o seu perfil</title>
+</head>
+<body>
+     <h1>Qual o seu perfl?</h1>
+     <h3>OBS: Todas as informações são de preenchimento obrigatório</h3>
+     <form action="">
+
+         <label for="txtNome">Nome: </label> 
+         <input type="text" id="txtNome" required>
+
+         <label for="idade">Idade: </label> 
+         <input type="number" min="1" max="130" id="idade" required>
+
+         <label for="passatempo">Qual o seu passatempo predileto? </label> 
+         <select name="passatempo" id="passatempo" required>
+               <option value="selecione" id="selecione">Selecione</option>
+               <option value="shopping" id="shopping">Passear no shopping (fazer compras, etc)</option>
+               <option value="natureza" id="natureza">Curtir a natureza (chacoeira, etc)</option>
+         </select>
+         <input type="button" value="Ver opções de carro" id="btnCarro">
+         <input type="button" value="Limpar" id="btnLimpar">
+     </form>
+     <script src="js/scripts.js"></script>
+</body>
+</html>
