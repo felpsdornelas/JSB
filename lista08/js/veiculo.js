@@ -21,24 +21,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
      alterNome.innerHTML = nome;
 
-     if (passatempo === "shopping") {
-          categoriaCarros = vetCarros.filter(carro => carro.categoria === "shopping");
-      } else if (passatempo === "fazenda") {
-          categoriaCarros = vetCarros.filter(carro => carro.categoria === "fazenda");
-      } else {
-          alert("Escolha um passatempo primeiro.");
-          return;
-      }
 
-      function mostrarImg(categoriaCarros) {
-          var carro = categoriaCarros[slideAtual];
-          slideShow.src = `img/${carro.img}`;
-          fabricante.innerHTML = carro.fabricante;
-          nomeVeiculo.innerHTML = carro.nome;
-          potencia.innerHTML = carro.potencia;
-          garantia.innerHTML = carro.garantia;
-          consumo.innerHTML = carro.consumo;
-      }
 
      
 
