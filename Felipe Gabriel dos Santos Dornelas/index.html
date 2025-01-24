@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B3 - Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>CADASTRO</h1>
+            <h2>Bolsa de Valores</h2>
+        </div>
+        <form>
+            <label for="">Nome:</label>
+            <input type="text" id="txtNome">
+
+            <label for="">Sobrenome:</label>
+            <input type="text" id="txtSobrenome">
+
+            <label for="">Qual a sua faixa etária?</label>
+            <select id="selecionarIdade">
+                <option value="opc1" id="opc1">Selecione</option>
+                <option value="opc2" id="opc2">Entre 0 a 12 anos</option>
+                <option value="opc3" id="opc3">Entre 13 a 18 anos</option>
+                <option value="opc4" id="opc4">Entre 19 a 21 anos</option>
+                <option value="opc5" id="opc5">Entre 22 a 30 anos</option>
+                <option value="opc6" id="opc6">31 anos ou mais</option>
+            </select>
+            <input type="button" value="Cadastrar" id="btnCadastrar">
+            <input type="button" value="Limpar" id="btnLimpar">
+
+            <p id="alerta">* Favor preencher todos os campos acima</p>
+            <img id="alertaImg" src="/img/b3.png">
+        </form>
+        
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

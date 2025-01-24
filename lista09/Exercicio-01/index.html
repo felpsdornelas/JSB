@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Expressões regulares JS</title>
+</head>
+<body>
+     <!-- A) Números binários -->
+     <label for="">Digite número binários:</label>
+     <input type="text" id="numBinario" value="0101001">
+     <input type="button" value="Validar" id="btnNumBinario">
+
+     <br><br>
+
+     <!-- Números hexadecimais -->
+     <label for="">Digite números hexadecimais:</label>
+     <input type="text" id="numHexadecimal" value="FE07">
+     <input type="button" value="Validar" id="btnNumHexadecimal">
+
+     <br><br>
+     
+     <!-- Números decimais -->
+     <label for="">Digite números decimais:</label>
+     <input type="text" id="numDecimal" value="3,14">
+     <input type="button" value="Validar" id="btnNumDecimal">
+
+     <br><br>
+     
+     <!-- Números reais (pode haver casas decimais) -->
+     <label for="">Digite números reais:</label>
+     <input type="text" id="numReais" value="-123,34">
+     <input type="button" value="Validar" id="btnNumReais">
+     
+     <br><br>
+     
+     <!-- Horário no formato: 00:00:00 -->
+     <label for="">Digite um horário:</label>
+     <input type="text" id="horario" value="17:48:02" placeholder="00:00:00">
+     <input type="button" value="Validar" id="btnHorario">
+     
+     <br><br>
+     
+     <!-- Data de nascimento: dd/mm/aaaa ou dd/mm/aa
+ -->
+     <label for="">Digite uma data de nascimento:</label>
+     <input type="text" id="dataNasc" value="29/12/2004" placeholder="Formato dd/mm/aaaa ou dd/mm/aa
+     ">
+     <input type="button" value="Validar" id="btnDataNasc">
+     
+     <br><br>
+     
+     <!-- CEP -->
+     <label for="">Digite o seu CEP:</label>
+     <input type="text" id="cep" value="38.408-00" placeholder="00.000-000">
+     <input type="button" value="Validar" id="btnCep">
+     
+     <br><br>
+     
+     <!-- CPF -->
+     <label for="">Digite o seu CPF:</label>
+     <input type="text" id="cpf" value="149.664.836-62" placeholder="000.000.000-00">
+     <input type="button" value="Validar" id="btnCpf">
+     
+     <br><br>
+     
+     <!-- CNPJ -->
+     <label for="">Digite o seu CNPJ:</label>
+     <input type="text" id="cnpj" value="00.000.000/0001-00" placeholder="00.000.000/0001-00">
+     <input type="button" value="Validar" id="btnCnpj">
+     
+     <br><br>
+     
+     <!-- Números entre parênteses  -->
+     <label for="">Digite um número entre parênteses:</label>
+     <input type="text" id="numParenese" value="(777)" placeholder="(000)">
+     <input type="button" value="Validar" id="btnNumParenese">
+
+     <br><br>
+     
+     <!-- Email - Padrão esperado: xxx@yyy.ccc (c: poderá ter de 2 a 3 caracteres) -->
+     <label for="">Digite o seu Email:</label>
+     <input type="text" id="Email" value="joovictorrodriguescosta13@gmail.com" placeholder="xxx@yyy.ccc">
+     <input type="button" value="Validar" id="btnEmail">
+     
+     <br><br>
+     
+     <!-- Endereço (domínio ou IPv4). Ex: 192.168.1.1, 255.255.255.255 (somente nros) -->
+     <label for="">Digite domínio ou IPv4:</label>
+     <input type="text" id="numDominio" value="192.168.1.1" placeholder="255.255.255.255">
+     <input type="button" value="Validar" id="btnNumDominio">
+     
+     <br><br>
+     
+     <!-- Altura de uma pessoa. Ex: x,xz ou x.xz (onde z é opcional) -->
+     <label for="">Digite a sua altura:</label>
+     <input type="text" id="altura" value="1,70" placeholder="x,xz ou x.xz (onde z é opcional)">
+     <input type="button" value="Validar" id="btnAltura">
+     
+     <br><br>
+     
+     <!-- Nome próprio (letra inicial maiúscula e demais minúsculas). Ex: Wilton -->
+     <label for="">Digite o seu nome:</label>
+     <input type="text" value="Felipe" id="nome">
+     <input type="button" value="Validar" id="btnNome">
+     
+     <br><br>
+     
+     <!-- Telefone no padrão internacional. Ex: +xx(xx)xxxxx-xxxx  -->
+     <label for="">Digite o seu telefone:</label>
+     <input type="text" id="telefone" value="+55(34)12345-1234" placeholder="+xx(xx)xxxxx-xxxx">
+     <input type="button" value="Validar" id="btnTelefone">
+     
+     <br><br>
+     
+     <!-- Texto: "IFTM campus Uberlândia" ou "IFTM campus Uberlândia Centro"  -->
+     <label for="">Digite o texto:</label>
+     <input type="text" id="txtIftm" value="IFTM campus Uberlândia Centro" placeholder="IFTM campus Uberlândia ou IFTM campus Uberlândia Centro">
+     <input type="button" value="Validar" id="btnTxtIftm">
+     
+     <br><br>
+     
+     <!-- Números de 1 a 100 -->
+     <label for="">Digite um número de 1 a 100:</label>
+     <input type="text" id="numCem" value="99" placeholder="1 a 100">
+     <input type="button" value="Validar" id="btnNumCem">
+     
+     <br><br>
+     
+     <!-- Placa de carro (padrão Mercosul) -->
+     <label for="">Digite uma placa de carro MERCOSUL:</label>
+     <input type="text" id="numPlaca" value="RIO2A18" placeholder="">
+     <input type="button" value="Validar" id="btnNumPlaca">
+
+     <br><br>
+
+     <!-- Palavras contendo vogais e/ou algumas dessas letras: “b”, “c”, “d”. Ex:“dado”, “caco” -->
+     <label for="">Digite uma palavra  contendo vogais e/ou algumas dessas letras: “b”, “c”, “d”.:</label>
+     <input type="text" id="txtVogais" value="caco" placeholder="">
+     <input type="button" value="Validar" id="btnTxtVogais">
+
+     <br><br>
+
+     <!-- O faturamento de uma empresa. O valor poderá variar de R$0,00 até R$999.999.999.999,99 (999 bilhões de reais). Exemplos válidos: R$400,8; R$400,85; R$1.500,41; R$1.500,7; R$5.601.478,10; R$10.524.478.967,70 -->
+     <label for="">Digite o faturamento de sua empresa:</label>
+     <input type="text" id="numFaturamento" value="R$10.524.478.967,70" placeholder="">
+     <input type="button" value="Validar" id="btnNumFaturamento">
+
+     <br><br>
+
+     <!-- Número de matrícula: IFTM-xxx/xxx-yy ou iftm-xxx/xxx-yy. Onde x é um dígito e y um caracter alfanumérico -->
+     <label for="">Digite o número de sua PRIMEIRA matrícula:</label>
+     <input type="text" id="numMatricula" value="iftm-123/456-F0" placeholder="IFTM-xxx/xxx-yy ou iftm-xxx/xxx-yy">
+     <input type="button" value="Validar" id="btnNumMatricula">
+     
+     <br><br>
+
+     <!-- Número de matrícula. Único formato permitido: MT-xx.xxx-IFTM. Onde x deverá um dígito, as letras MT deverão ser maiúsculas e as letras IFTM poderão ser tanto maiúsculas quanto minúsculas. -->
+     <label for="">Digite o número de sua SEGUNDA matrícula :</label>
+     <input type="text" id="numMatricula2" value="MT-12.456-IfTm" placeholder="MT-xx.xxx-IFTM">
+     <input type="button" value="Validar" id="btnNumMatricula2">
+
+     <br><br>
+
+     <!-- Número de matrícula. Único formato permitido: MT-xx.xxx-IFTM Y. Onde x é um dígito, as letras do padrão poderão ser tanto maiúsculas quanto minúsculas e entre as letras poderá haver no máximo um espaço em branco (ou seja, pode ser que não tenha nenhum) e Y é o nome de um dos seguintes campi UBERLÂNDIA CENTRO ou UBERLÂNDIA (A primeira letra do nome/sobrenome de cada campus deve ser maiúscula e as demais minúsculas). -->
+     <label for="">Digite o número de sua TERCEIRA matrícula :</label>
+     <input type="text" id="numMatricula3" value="M t-12.456-I f Tm Uberlândia Centro" placeholder="MT-xx.xxx-IFTM Y">
+     <input type="button" value="Validar" id="btnNumMatricula3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
