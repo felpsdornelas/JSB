@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Par-Clique</title>
+</head>
+
+<body>
+    <header>
+        <div class="menuNivel">
+            <p>Nível: </p>
+            <select name="" id="nivel">
+                <option value="selecione">Selecione</option>
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Díficil</option>
+            </select>
+        </div>
+        <div class="menuTempo">
+            <p>Tempo:<p><span id="tempo">00:00</span></p>
+        </div>
+        <div>
+            <form action="">
+                <input id="btnIniciar" type="button" value="Iniciar">
+                <input id="btnPausar" type="button" value="Pausar">
+                <input id="btnParar" type="button" value="Parar">
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <p><span id="numAleatorio">_</span></p>
+    </main>
+
+    <footer>
+        <div>
+            <p>Acertos: <span id="qntAcertos">0 </span></p>
+            <p>Porcentagem: <span id="porcentagemAcertos">0</span>%</p>
+        </div>
+
+        <div><p>Erros: <span id="qntErros">0</span></p></div>
+        <div><p>Números pares sorteados: <span id="qntNumPares">0</span></p></div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

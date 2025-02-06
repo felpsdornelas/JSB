@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Press Start 2P", serif;
+}
+
+.erro, .pausado {
+    color: red;
+}
+
+.acerto {
+    color: green;
+}
+
+.pausado {
+   font-size: 120px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+}
+
+header>div {
+    width: 33%;
+}
+
+.menuNivel>p, .menuTempo>p {
+    padding: 5px;
+    display: inline-block;
+}
+
+main {
+    text-align: center;
+    font-size: 250px;
+    width: 100%;
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    user-select: none;
+}
+
+input, select{
+    appearance: none; /* Remove o estilo padrão */
+    padding: 6px;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+}
+
+input {
+    text-align: center;
+}
+
+input:active{
+    background-color: yellow;
+    color: blueviolet;
+}
+
+option:hover {
+    background-color: yellow;
+    color: blueviolet;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+footer > div {
+    width: 33%;
+    margin-left: 5px;
+}
+
+footer >  div > p {
+    padding-bottom: 5px;
+    color: white;
+}
+
+footer >  div > p > span {
+    color: yellow;
+}
+
+header {
+    color: yellow;
+}
+
+header > div > p > span {
+    color: white;
+}
