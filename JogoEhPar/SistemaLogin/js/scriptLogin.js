@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function(){
                usuarios = JSON.parse(usuarios);
                var resultado = checarCredenciais(usuarios);
                if(resultado ==  "loginOk") {
-                    window.open("/JSB/SistemaJogo/index.html", "_self");
+                    window.open("SistemaJogo/index.html", "_self");
                } else if (resultado == "senhaIncorreta") {
                     alert("Senha incorreta, tente novamente!");
                } else {
