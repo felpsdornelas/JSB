@@ -1,0 +1,27 @@
+window.addEventListener("DOMContentLoaded", function(){
+
+     var btnMario = document.getElementById("btnMario");
+     var btnLuigi = document.getElementById("btnLuigi");
+     var imgPersonagens = document.getElementById("imgPersonagens");
+     var contMario = document.getElementById("contMario");
+     var contLuigi = document.getElementById("contLuigi");
+
+     var contadorMario = 0;
+     var contadorLuigi = 0;
+
+     btnLuigi.addEventListener("click", function(){
+          imgPersonagens.src = "Imagens/luigi.gif";
+          contadorLuigi++;
+          contLuigi.textContent = contadorLuigi;
+     })
+
+     btnMario.addEventListener("click", function(){
+          imgPersonagens.src = "Imagens/mario.gif";
+          contadorMario++;
+          contMario.textContent = contadorMario;
+     })
+
+
+
+
+});

@@ -67,5 +67,3 @@ function checharTamanhoSenha (senha) {
      }
      return false;
 };
-
-// comit para tentar corrigir o erro do git

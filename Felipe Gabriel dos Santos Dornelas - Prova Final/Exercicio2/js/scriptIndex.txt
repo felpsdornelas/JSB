@@ -1,0 +1,31 @@
+window.addEventListener("DOMContentLoaded", function() {
+
+     var nome = document.getElementById("nome");
+     var sobrenome = document.getElementById("sobrenome");
+     var senha = document.getElementById("senha");
+     var sexo = document.getElementById("sexo");
+     var btnEnviar = document.getElementById("btnEnviar");
+
+     btnEnviar.addEventListener("click", function(){
+
+          if (nome.value.trim() == "" || sobrenome.value.trim() == "") {
+               alert("Favor informar o NOME e SOBRENOME");       
+          } else {
+               padrao = /^(REC|RECUPERAÇÃO)-Jsbásico:\(1\)[2-5][2-5]$/; // REC-Jsbásico:(1)23
+
+               // LocalStorage 
+               var novoUsuario = {nome : nome.value, sobrenome : sobrenome.value};
+               localStorage.setItem("usuarios", JSON.stringify([novoUsuario]));
+
+               if (padrao.test(senha.value)) {
+                    if (sexo.value == "masculino") {
+                         window.open("masculino.html");
+                    } else {
+                         window.open("feminino.html");
+                    }
+               } else {
+                    alert("Senha inválida")
+               }
+          }
+     }); 
+});

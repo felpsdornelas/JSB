@@ -1,0 +1,33 @@
+window.addEventListener("DOMContentLoaded", function(){
+
+     var nome = document.getElementById("nome");
+     var nomeExibido = document.getElementById("nomeExibido");
+
+     var qntChar = document.getElementById("qntChar");
+     var PrimeiraPalavra = document.getElementById("PrimeiraPalavra");
+     var ultimaPalavra = document.getElementById("ultimaPalavra");
+     var qntPalavra = document.getElementById("qntPalavra");
+
+     nome.addEventListener("change", function() {
+
+          nomeExibido.textContent = nome.value;
+
+          qntChar.textContent =  nome.value.trim().length;
+
+          // Primeira Palavra;
+          var nome1 = nome.value;
+          var vetNome = nome1.split(" ");
+          console.log(vetNome[0]);
+          PrimeiraPalavra.textContent = vetNome[0];
+
+          // Última Palavra; 
+          ultimaPalavra.textContent = vetNome[1];
+
+
+          // Quantidade de palavras;
+          qntPalavra.textContent = vetNome.length;
+
+     }); 
+
+
+});

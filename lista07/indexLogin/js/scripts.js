@@ -7,7 +7,7 @@ btnEntrar.addEventListener("click", function(){
      var usuarios = localStorage.getItem("usuarios");
 
      if(usuarios) {
-          usuarios = JSON.parse(usuarios)
+          usuarios = JSON.parse(usuarios);
           if(checkUsuario(usuarios)){
                window.location.href = "../JogoTamagotchi/MainTamagotchi.html";
           } else {

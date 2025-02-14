@@ -1,0 +1,20 @@
+window.addEventListener("DOMContentLoaded", function() {
+     
+     var p = document.getElementById("p");
+     
+     var texto = prompt("Digite um texto qualquer: ");
+     var letra = prompt("Digite uma letra: ");
+
+     // Transformando em minúsculas 
+     var textoMinusculo = texto.toLowerCase();
+     var letraMinuscula = letra.toLowerCase();
+
+     // Transformando em um vetor 
+     var vetTextoMinusculo = textoMinusculo.split(" ");
+
+
+     textoFinal = textoMinusculo.replaceAll(letraMinuscula, " ");
+
+     p.innerHTML = textoFinal;
+
+});
