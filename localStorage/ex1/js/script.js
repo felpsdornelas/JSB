@@ -1,3 +1,6 @@
+// Aula - 28/11/2024 
+// LocalStorage
+
 var btnCadastrar = document.getElementById("btnCadastrar");
 var btnLimpar = document.getElementById("btnLimpar");
 var txtUser = document.getElementById("txtUser");

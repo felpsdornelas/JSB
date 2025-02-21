@@ -1,7 +1,0 @@
-function somar (a,b){
-
-
-
-
-     
-}

@@ -1,3 +1,5 @@
+
+
 numero = prompt("Digite um valor: ");
 
 

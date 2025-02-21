@@ -1,3 +1,6 @@
+// Aula 02 - 26/09/2024 
+// Métodos Strings
+
 var nomeDisciplina;
 
 nomeDisciplina = "Java Script Básico";
